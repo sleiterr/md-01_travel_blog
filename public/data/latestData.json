@@ -1,0 +1,82 @@
+{
+  "latestPosts": [
+    {
+      "id": 1,
+      "title": "Angkor Wat ved Solopgang",
+      "date": "15-11-2023",
+      "country": "Cambodia",
+      "category": "Kultur",
+      "likes": 47,
+      "commentsCount": 12,
+      "cardImage": "/Latest/cambodia.gif",
+      "gallery": "/ImagePost/cambodia_mandalay.gif",
+      "description": "En magisk oplevelse at se solen stå op nover de gamle templer. Den tidlige start nvar det hele værd...",
+      "content": "Angkor Wat er et af verdens mest imponerende tempelkomplekser, og ved solopgang afslører stedet sin mest magiske side. Mens mørket langsomt forsvinder, spejler de ikoniske tårne sig i vandet, og himlen skifter farve fra dyb lilla til gylden orange. Stemningen er stille og næsten spirituel, kun brudt af fuglesang og kameraernes sagte klik. At gå gennem de gamle korridorer og udskårne stenrelieffer føles som at træde ind i en anden tidsalder. Her fortæller hver mur en historie om konger, guder og et rige, der engang dominerede regionen. Solopgangen ved Angkor Wat er ikke bare et syn — det er en oplevelse, der bliver siddende længe efter, man er rejst videre."
+    },
+    {
+      "id": 2,
+      "title": "Street Food Safari i Bangkok",
+      "date": "12-11-2023",
+      "country": "Thailand",
+      "category": "Mad",
+      "likes": 83,
+      "commentsCount": 28,
+      "cardImage": "/Latest/thailand.gif",
+      "gallery": "/ImagePost/thailand.gif",
+      "description": "Fra Pad Thai til Mango Sticky Rice - en kulinarisk rejse gennem Bangkoks gader og smage...",
+      "content": "Bangkok er en by, der aldrig sover — og det gælder især dens gadekøkkener. Overalt i byen stiger duften af stegte nudler, frisk koriander og krydrede saucer op fra små vogne og boder. Her er maden ikke bare næring, men en levende del af kulturen, hvor hvert måltid fortæller sin egen historie. Fra sprød Pad Thai til sød Mango Sticky Rice og krydret Tom Yum suppe var hvert stop en ny smagsoplevelse. Jeg sad på små plastikstole midt i gadens kaos, omgivet af lokale, scootere og neonlys. Det var rodet, varmt og fuldstændig fantastisk — et sandt indblik i Bangkoks sjæl."
+    },
+    {
+      "id": 3,
+      "title": "Bungee Jump i Queenstown",
+      "date": "8-11-2023",
+      "country": "New Zealand",
+      "category": "Eventyr",
+      "likes": 86,
+      "commentsCount": 45,
+      "cardImage": "/Latest/new_zealand.gif",
+      "gallery": "/ImagePost/new_zealand.gif",
+      "description": "43 meter ned i afgrunden - den mest skræmmende og fantastiske oplevelse på min rejse indtil nu...",
+      "content": "Queenstown er kendt som verdens adventure-hovedstad, og her kunne jeg ikke sige nej til mit hidtil vildeste spring. På kanten af broen, 43 meter over floden, bankede hjertet hårdt, mens vinden susede forbi. Sekunderne før springet føltes uendelige. Og så — frit fald. Et øjeblik af vægtløshed, rå frygt og ren eufori på samme tid. Da rebet strammede og jeg svajede over det turkise vand, blev skrækken erstattet af grin og lettelse. Det var et øjeblik, der mindede mig om, hvorfor jeg rejser: for at mærke livet helt ud i fingerspidserne."
+    },
+    {
+      "id": 4,
+      "title": "Sakura Sæson i Kyoto",
+      "date": "5-11-2023",
+      "country": "Japan",
+      "category": "Kultur",
+      "likes": 92,
+      "commentsCount": 31,
+      "cardImage": "/Latest/japan.gif",
+      "gallery": "/ImagePost/japan.gif",
+      "description": "De berømte kirsebærblomster i fuld flor skaber en magisk atmosfære i de gamle templer...",
+      "content": "Kyoto er centrum for Japans traditioner, og under sakura-sæsonen forvandles byen til et levende maleri. Når kirsebærtræerne blomstrer, dækkes templer, floder og gader af bløde nuancer af lyserød og hvid, og hele byen får en rolig og næsten drømmende stemning. I parker som Maruyama og langs Philosopher’s Path samles både lokale og rejsende for at nyde øjeblikket. Kronbladene falder stille til jorden, og Kyoto føles tidløs — et sted hvor natur, kultur og rejse smelter sammen."
+    },
+    {
+      "id": 5,
+      "title": "Nordlys over Island",
+      "date": "1-11-2023",
+      "country": "Iceland",
+      "category": "Natur",
+      "likes": 201,
+      "commentsCount": 67,
+      "cardImage": "/Latest/island.gif",
+      "gallery": "/ImagePost/iceland.gif",
+      "description": "Efter flere kolde nætter lykkedes det endelig at fange det spektakulære nordlys på kamera...",
+      "content": "Islands landskaber føles som noget fra en anden planet. Vulkaner, gletsjere og endeløse lavamarker skaber en rå og uberørt natur. Men intet kunne forberede mig på øjeblikket, hvor nordlyset endelig viste sig på himlen. Grønne og violette bølger dansede lydløst over mørket, som om himlen selv var i bevægelse. Kulden blev glemt, mens jeg stod stille og bare så op. Det var et af de øjeblikke, hvor tiden forsvinder, og verden føles både enorm og uendeligt smuk."
+    },
+    {
+      "id": 6,
+      "title": "Inca Trail til Machu Picchu",
+      "date": "1-10-2023",
+      "country": "Peru",
+      "category": "Eventyr",
+      "likes": 134,
+      "commentsCount": 89,
+      "cardImage": "/Latest/peru.gif",
+      "gallery": "/ImagePost/peru.gif",
+      "description": "Fire dages vandring gennem bjergene kulminerede med den utrolige udsigt over de gamle ruiner...",
+      "content": "Inca Trail er ikke bare en vandrerute — det er en rejse gennem historie og dramatiske landskaber. Stierne snor sig gennem tågeskov, stejle bjergpas og gamle inkabyer, hvor hvert skridt føles som en forbindelse til fortiden. Efter flere dages vandring åbnede landskabet sig, og Machu Picchu dukkede frem mellem skyerne. Synet var overvældende. De gamle ruiner lå stille i morgensolen, og træthed blev øjeblikkeligt erstattet af ærefrygt. Det var kulminationen på en rejse, jeg aldrig vil glemme."
+    }
+  ]
+}
