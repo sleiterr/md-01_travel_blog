@@ -1,9 +1,12 @@
 import "./App.css";
+import Navbar from "./components/header/NavBar.jsx";
+import Hero from "./components/hero/Hero.jsx";
 
 function App() {
   return (
     <>
-      <h1 className="text-2xl font-bold text-red-500">Hello World</h1>
+      <Navbar />
+      <Hero />
     </>
   );
 }

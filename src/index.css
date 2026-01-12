@@ -1,13 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @import "tailwindcss";
 @import "tailwindcss/utilities";
 
-/* @theme {
-} */
+@theme {
+  --color-body: rgba(17, 24, 39, 1);
+  --color-footer: rgba(17, 24, 39, 1);
+
+  --color-primary: #fff;
+  --color-secondary: #fff;
+  --color-stat-title: #1f2937;
+  --color-stat-text: #4b5563;
+  --color-nav: #333;
+
+  --color-header-overlay: rgba(217, 217, 217, 0.4);
+  --color-border: #fff; /* #3e3e3e */
+
+  --color-hero-overlay: rgba(1, 0, 0, 0.4);
+
+  /* footer-color */
+  --color-primary-footer: #fff;
+  --color-secondary-footer: rgba(156, 163, 175, 1);
+  --color-footer-icon: rgba(156, 163, 175, 1);
+  --color-footer-rating: rgba(250, 204, 21, 1);
+  --color-rating-box: rgba(31, 41, 55, 1);
+
+  --color-rating-nr: rgba(44, 82, 130, 1);
+  --color-rating-text: rgba(140, 162, 192, 1);
+
+  --color-badge-cam: rgba(147, 51, 234, 1);
+  --color-badge-thai: rgba(234, 88, 12, 1);
+  --color-badge-new: rgba(220, 38, 38, 1);
+  --color-badge-jap: rgba(219, 39, 119, 1);
+  --color-badge-island: rgba(22, 163, 74, 1);
+  --color-badge-peru: rgba(202, 138, 4, 1);
+
+  --color-badge-about: rgba(234, 88, 12, 1);
+  --color-span-about: rgba(0, 214, 139, 1);
+
+  --color-location-overlay: rgba(255, 255, 255, 0.18);
+  --color-card-overlay: rgba(13, 13, 13, 0.6);
+  --color-post-overlay: rgba(1, 0, 0, 0.6);
+
+  --color-hero-btn: rgba(37, 99, 235, 1);
+  --color-hero-btn-hover: rgba(29, 78, 216, 1);
+
+  --color-about-btn: rgba(234, 88, 12, 1);
+
+  --color-filter-btn-hover: rgba(22, 163, 74, 1);
+  --color-filter-btn-text: rgba(51, 51, 51, 1);
+  --color-filter-btn-icon: rgba(51, 51, 51, 1);
+
+  --color-title-bg: rgba(197, 180, 150, 1);
+  --color-testimonials-bg: rgba(130, 155, 151, 1);
+  --color-footer-bg: rgba(42, 79, 87, 1);
+  --color-about-bg: rgba(42, 79, 87, 1);
+  --color-activ-card-bg: rgba(51, 98, 108, 1);
+  --color-menu-bg: rgba(130, 155, 151, 1);
+  --color-menu-bg: #829b97;
+
+  --color-button-bg: rgba(130, 155, 151, 1);
+  --color-button-hover-bg: rgba(104, 124, 121, 1);
+
+  --font-poppins: "Poppins", sans-serif;
+}
 
 :root {
-  --font-gothic: "Nanum Gothic", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 html {
-  font-family: var(--font-gothic);
+  font-family: var(--font-poppins);
 }
