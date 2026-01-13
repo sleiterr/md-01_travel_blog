@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 
-const HeroBtn = ({ children, to, ...rest }) => {
+const Button = ({ children, to, className, ...rest }) => {
   return (
     <>
       <Link
@@ -13,6 +13,7 @@ const HeroBtn = ({ children, to, ...rest }) => {
           "font-poppins font-normal text-secondary text-xl",
           "transition duration-300 ease-in-out",
           "hover:bg-hero-btn-hover",
+          className,
         )}
       >
         {children}
@@ -21,4 +22,4 @@ const HeroBtn = ({ children, to, ...rest }) => {
   );
 };
 
-export default HeroBtn;
+export default Button;

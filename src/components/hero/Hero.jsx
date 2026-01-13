@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { location } from "../../assets/iconExports/index.js";
 import heroBg from "../../assets/bgHero/hero.gif";
 import StatBox from "./StatBox";
-import Button from "../Button/HeroBtn";
+import Button from "../Button/Button";
 
 const heroText = [
   {
@@ -26,8 +27,12 @@ const Hero = () => {
       }}
     >
       <div className="absolute inset-0 bg-hero-overlay"></div>
-      <div className="absolute inset-0 grid grid-cols-2 justify-start p-16 w-full">
+      <div className="absolute inset-0 top-16 grid grid-cols-2 justify-start p-16 w-full">
         <div className="flex flex-col items-start justify-center w-2xl">
+          <div className="flex items-center mb-4 gap-3 bg-hero-badge rounded-md px-4 py-2  text-white font-light">
+            <img src={location} alt="location icon" />
+            <p>Aktuelt i: Bangkok, Thailand</p>
+          </div>
           <HeroItem />
           <Button to="#">Læs Mine Historier</Button>
         </div>
