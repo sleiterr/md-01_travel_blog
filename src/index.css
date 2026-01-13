@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
 @import "tailwindcss/utilities";
@@ -14,9 +14,11 @@
   --color-nav: #333;
 
   --color-header-overlay: rgba(217, 217, 217, 0.4);
-  --color-border: #fff; /* #3e3e3e */
+  --color-border: #fff;
+  /* #3e3e3e */
 
   --color-hero-overlay: rgba(1, 0, 0, 0.4);
+  --color-hero-badge: rgba(217, 217, 217, 0.40);
 
   /* footer-color */
   --color-primary-footer: #fff;
@@ -35,6 +37,7 @@
   --color-badge-island: rgba(22, 163, 74, 1);
   --color-badge-peru: rgba(202, 138, 4, 1);
 
+  --color-box-about: rgba(31, 41, 55, 1);
   --color-badge-about: rgba(234, 88, 12, 1);
   --color-span-about: rgba(0, 214, 139, 1);
 
@@ -46,6 +49,7 @@
   --color-hero-btn-hover: rgba(29, 78, 216, 1);
 
   --color-about-btn: rgba(234, 88, 12, 1);
+  --color-about-btn-hover: rgba(210, 70, 10, 1);
 
   --color-filter-btn-hover: rgba(22, 163, 74, 1);
   --color-filter-btn-text: rgba(51, 51, 51, 1);
@@ -63,6 +67,7 @@
   --color-button-hover-bg: rgba(104, 124, 121, 1);
 
   --font-poppins: "Poppins", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
 }
 
 :root {
@@ -71,4 +76,9 @@
 
 html {
   font-family: var(--font-poppins);
+}
+
+body {
+  background-color: var(--color-body);
+  color: var(--color-primary);
 }
