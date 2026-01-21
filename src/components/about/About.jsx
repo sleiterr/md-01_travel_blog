@@ -18,7 +18,7 @@ const aboutText = [
 
 const About = () => {
   return (
-    <Section>
+    <Section id="om">
       <div
         className={clsx(
           "grid grid-cols-2",
