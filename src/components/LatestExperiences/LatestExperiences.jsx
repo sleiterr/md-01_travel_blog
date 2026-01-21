@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { fetchLatestPosts } from "../../utils/api.js";
 import Section from "../Section/Section.jsx";
-import Cardlatest from "./Cardlatest.jsx";
+import CardLatest from "./CardLatest.jsx";
 import BtnFilter from "./BtnFilter.jsx";
 
 const latestText = [
@@ -64,7 +64,7 @@ const LatestExperiences = () => {
         </div>
         <div className="">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            <Cardlatest posts={categoryPosts} />
+            <CardLatest posts={categoryPosts} />
           </ul>
         </div>
       </Section>
