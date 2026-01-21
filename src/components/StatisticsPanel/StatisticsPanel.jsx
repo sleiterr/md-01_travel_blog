@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ImPlus } from "react-icons/im";
 import clsx from "clsx";
 
-import postsData from "../../../public/data/latestData.json";
+import { fetchLatestPosts } from "../../utils/api.js";
+import { calculateStatus } from "../../utils/statistics.js";
 import RatingSection from "../Section/RatingSection.jsx";
 
 const PanelText = [
@@ -16,12 +17,37 @@ const PanelText = [
 ];
 
 const StatisticsPanel = () => {
-  const posts = postsData.latestPosts; // Assuming postsData is defined elsewhere
+  const [latestStatistics, setLatestStatistics] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const totalPosts = posts.length; // generate total posts
-  const countriesVisited = [...new Set(posts.map((post) => post.country))]
-    .length; // total unique countries visited
-  const totalLikes = posts.reduce((acc, post) => acc + post.likes, 0); // total likes
+  useEffect(() => {
+    const stayData = async () => {
+      try {
+        setLoading(true);
+        const data = await fetchLatestPosts();
+        console.log("Fetched statistics:", data);
+        setLatestStatistics(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    stayData();
+  }, []);
+
+  const { totalPosts, countriesVisited, totalLikes } = calculateStatus(
+    latestStatistics || [],
+  );
+
+  if (loading)
+    return (
+      <p className="font-normal text-2xl text-sky-800">Loading statistics...</p>
+    );
+
+  if (error)
+    return <p className="font-normal text-2xl text-red-500">{error}</p>;
 
   return (
     <RatingSection>
@@ -42,11 +68,11 @@ const PanelItem = ({ countriesVisited, totalPosts, totalLikes }) => {
   return (
     <>
       {PanelText.map((item) => (
-        <ul className="flex flex-col md:flex-row items-center justify-between gap-10">
-          <li
-            key={item.id}
-            className="flex flex-col items-center justify-center gap-2"
-          >
+        <ul
+          key={item.id}
+          className="flex flex-col md:flex-row items-center justify-between gap-10"
+        >
+          <li className="flex flex-col items-center justify-center gap-2">
             <p className="font-dm font-bold text-rating-nr text-6xl">
               {countriesVisited}
             </p>

@@ -1,7 +1,8 @@
 import logo from "../logo/logo.svg";
-import menu from "../icons/calendar.svg";
+import calendar from "../icons/calendar.svg";
 import earth from "../icons/earth.svg";
 import food from "../icons/food.svg";
+import mountain from "../icons/mountain.svg";
 import heart from "../icons/heart.svg";
 import home from "../icons/home.svg";
 import instagram from "../icons/instagram.svg";
@@ -16,8 +17,9 @@ import youtube from "../icons/youtube.svg";
 
 export {
   logo,
-  menu,
+  calendar,
   earth,
+  mountain,
   food,
   heart,
   home,
