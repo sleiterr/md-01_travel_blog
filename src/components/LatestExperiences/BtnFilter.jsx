@@ -1,11 +1,9 @@
 import React from "react";
 import { BiCategoryAlt } from "react-icons/bi";
-import {
-  earth,
-  kultur,
-  food,
-  mountain,
-} from "../../assets/iconExports/index.js";
+import { FaEarthEurope } from "react-icons/fa6";
+import { FaUniversity } from "react-icons/fa";
+import { FaUtensils } from "react-icons/fa6";
+import { TbMountain } from "react-icons/tb";
 import clsx from "clsx";
 
 const itemsFilterBttn = [
@@ -27,11 +25,9 @@ const itemsFilterBttn = [
     id: 2,
     text: "Eventyr",
     icon: (
-      <img
-        src={earth}
-        alt={earth}
+      <FaEarthEurope
         className={clsx(
-          "text-xl inline-block",
+          "text-xl inline-block text-filter-btn-icon",
           "transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:text-white",
         )}
       />
@@ -42,11 +38,9 @@ const itemsFilterBttn = [
     id: 3,
     text: "Kultur",
     icon: (
-      <img
-        src={kultur}
-        alt={kultur}
+      <FaUniversity
         className={clsx(
-          "text-xl inline-block",
+          "text-xl inline-block text-filter-btn-icon",
           "transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:text-white",
         )}
       />
@@ -57,11 +51,9 @@ const itemsFilterBttn = [
     id: 4,
     text: "Mad",
     icon: (
-      <img
-        src={food}
-        alt={food}
+      <FaUtensils
         className={clsx(
-          "text-xl inline-block",
+          "text-xl inline-block text-filter-btn-icon",
           "transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:text-white",
         )}
       />
@@ -72,11 +64,9 @@ const itemsFilterBttn = [
     id: 5,
     text: "Natur",
     icon: (
-      <img
-        src={mountain}
-        alt={mountain}
+      <TbMountain
         className={clsx(
-          "text-xl inline-block",
+          "text-xl inline-block text-filter-btn-icon",
           "transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:text-white",
         )}
       />

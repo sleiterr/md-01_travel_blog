@@ -16,11 +16,18 @@ export const calculateStatus = (posts) => {
     return acc;
   }, {});
 
+  const totalRating = posts.reduce((acc, post) => acc + (post.rating || 0), 0);
+  const averageRating = posts.length
+    ? (totalRating / posts.length).toFixed(1)
+    : 0;
+
   return {
     totalPosts,
     countriesVisited,
     totalLikes,
     totalComments,
     categoriesCount,
+    totalRating,
+    averageRating,
   };
 };
