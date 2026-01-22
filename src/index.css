@@ -23,9 +23,10 @@
   /* footer-color */
   --color-primary-footer: #fff;
   --color-footer: rgba(17, 24, 39, 1);
+  --color-rating-bg: rgba(31, 41, 55, 1);
   --color-secondary-footer: rgba(156, 163, 175, 1);
   --color-footer-icon: rgba(156, 163, 175, 1);
-  --color-footer-rating: rgba(250, 204, 21, 1);
+  --color-rating-star: rgba(250, 204, 21, 1);
   --color-rating-box: rgba(31, 41, 55, 1);
 
   --color-rating-nr: rgba(44, 82, 130, 1);

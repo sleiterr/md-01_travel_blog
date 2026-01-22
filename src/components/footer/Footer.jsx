@@ -2,7 +2,9 @@ import React from "react";
 import Statistic from "./Statistic";
 import Category from "./Category";
 import { logo } from "../../assets/iconExports/index";
-import { Link } from "react-router-dom";
+import FooterSocials from "./FooterSocials";
+import Rating from "./Rating";
+
 import { FaRegCopyright } from "react-icons/fa";
 import clsx from "clsx";
 
@@ -46,8 +48,12 @@ const Footer = ({
           </h4>
           <Category categoriesCount={categoriesCount} />
         </div>
-        <div className="col-span-1"></div>
-        <div className="col-span-1"></div>
+        <div className="col-span-1">
+          <div className="flex flex-col align-start">
+            <FooterSocials />
+            <Rating />
+          </div>
+        </div>
       </div>
       <div
         className={clsx(

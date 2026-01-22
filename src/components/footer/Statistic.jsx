@@ -69,25 +69,25 @@ const ListStatistic = ({
       {StatText.map((item) => (
         <ul key={item.id} className="flex flex-col items-start gap-3 w-full">
           <li className="flex flex-row items-center justify-between w-full">
-            <p className={item.textClass}>{item.textPosts}</p>
+            <p className={item.textClass}>{item.textPosts}:</p>
             <p className="font-normal text-primary-footer text-base tracking-wide">
               {totalPosts}
             </p>
           </li>
           <li className="flex flex-row items-center justify-between w-full">
-            <p className={item.textClass}>{item.textVisited}</p>
+            <p className={item.textClass}>{item.textVisited}:</p>
             <p className="font-normal text-primary-footer text-base tracking-wide">
               {countriesVisited}
             </p>
           </li>
           <li className="flex flex-row items-center justify-between w-full">
-            <p className={item.textClass}>{item.textLikes}</p>
+            <p className={item.textClass}>{item.textLikes}:</p>
             <p className="font-normal text-primary-footer text-base tracking-wide">
               {totalLikes}
             </p>
           </li>
           <li className="flex flex-row items-center justify-between w-full">
-            <p className={item.textClass}>{item.textComment}</p>
+            <p className={item.textClass}>{item.textComment}:</p>
             <p className="font-normal text-primary-footer text-base tracking-wide">
               {totalComments}
             </p>
