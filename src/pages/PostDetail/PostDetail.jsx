@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import SectionPost from "../../components/Section/SectionPost.jsx";
 import PostNav from "./postNav.jsx";
 import ScrollLink from "./ScrollLink.jsx";
+import ReviewModal from "./ReviewModal.jsx";
 
 import clsx from "clsx";
 
@@ -72,14 +73,20 @@ const PostDetail = () => {
           </h2>
           <p
             className={clsx(
-              "font-normal text-lg/7 text-secondary tracking-wide",
+              "font-light text-lg/7 text-secondary tracking-wide",
               "w-2xl",
             )}
           >
             {post.content}
           </p>
         </div>
-        <div className="mt-auto px-12 flex justify-end">
+        <div
+          className={clsx(
+            "flex justify-between items-center w-full",
+            "mt-auto px-12",
+          )}
+        >
+          <ReviewModal postId={post.id} />
           <ScrollLink />
         </div>
       </div>

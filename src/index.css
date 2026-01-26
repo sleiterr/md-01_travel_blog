@@ -10,7 +10,7 @@
   --color-primary: #fff;
   --color-secondary: #fff;
   --color-stat-title: #1f2937;
-  --color-stat-text: #4b5563;
+  --color-stat: #4b5563;
   --color-nav: #333;
 
   --color-header-overlay: rgba(217, 217, 217, 0.4);
@@ -57,16 +57,8 @@
   --color-filter-btn: rgba(51, 51, 51, 1);
   --color-filter-btn-icon: rgba(51, 51, 51, 1);
 
-  --color-title-bg: rgba(197, 180, 150, 1);
-  --color-testimonials-bg: rgba(130, 155, 151, 1);
-  --color-footer-bg: rgba(42, 79, 87, 1);
-  --color-about-bg: rgba(42, 79, 87, 1);
-  --color-activ-card-bg: rgba(51, 98, 108, 1);
-  --color-menu-bg: rgba(130, 155, 151, 1);
-  --color-menu-bg: #829b97;
-
-  --color-button-bg: rgba(130, 155, 151, 1);
-  --color-button-hover-bg: rgba(104, 124, 121, 1);
+  --color-review: #333;
+  --color-icon-review: #333;
 
   --font-poppins: "Poppins", sans-serif;
   --font-dm: "DM Sans", sans-serif;

@@ -38,6 +38,7 @@ const ScrollLink = () => {
   return (
     <>
       <button
+        type="button"
         onClick={handleClick}
         className={clsx(
           "group inline-flex items-center gap-1",
@@ -46,7 +47,7 @@ const ScrollLink = () => {
           "hover:text-sky-400",
         )}
       >
-        Tilbage til rejser{" "}
+        Tilbage til rejser
         <IoIosArrowRoundForward
           className={clsx(
             "inline-block text-3xl",

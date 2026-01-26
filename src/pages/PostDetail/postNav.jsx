@@ -12,8 +12,12 @@ const postNav = () => {
             PiligrimTales
           </p>
         </div>
-        <Link className="cursor-pointer" to={"/"}>
-          <img src={home} alt="home icon" className="w-12 h-12" />
+        <Link className="group inline-flex cursor-pointer" to={"/"}>
+          <img
+            src={home}
+            alt="home icon"
+            className="w-10 h-10 group-hover:scale-110"
+          />
         </Link>
       </header>
     </>
