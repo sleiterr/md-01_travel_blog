@@ -8,7 +8,7 @@ const statText = [
     subtitle: "Besøgt indtil nu",
     element: <img src={plane} alt="Plane Icon" className="w-12 h-auto" />,
     titleClass: "font-semibold text-base text-stat-title tracking-wide",
-    subtitleClass: "font-normal text-base text-stat-text tracking-wide",
+    subtitleClass: "font-normal text-base text-stat tracking-wide",
   },
 ];
 
