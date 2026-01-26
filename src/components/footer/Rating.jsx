@@ -45,7 +45,9 @@ const Rating = () => {
 
   return (
     <div className={clsx("bg-rating-bg rounded-xl", "py-4 px-4")}>
-      <p>Brugervurdering:</p>
+      <p className="font-normal text-secondary-footer text-base tracking-wide">
+        Brugervurdering:
+      </p>
       <div className="flex items-center py-2">
         {stars.map((_, index) =>
           index < Math.round(ratingData) ? (
@@ -54,9 +56,13 @@ const Rating = () => {
             <FaRegStar key={index} size={24} color={colors.grey} />
           ),
         )}
-        {ratingData}/5
+        <span className="font-semibold text-base text-white ml-2">
+          {ratingData}/5
+        </span>
       </div>
-      <p>Baseret på {totalRewiews} anmeldelser</p>
+      <p className="font-normal text-secondary-footer text-base tracking-wide">
+        Baseret på {totalRewiews} anmeldelser
+      </p>
     </div>
   );
 };
