@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 
-const RatingStars = () => {
-  const [rating, setRating] = useState(0);
+const RatingStars = ({ value, onChange }) => {
   const [hoverValue, setHoverValue] = useState(undefined);
 
   const colors = {
@@ -21,24 +20,28 @@ const RatingStars = () => {
   };
 
   const handleClickStar = (value) => {
-    setRating(value);
+    onChange(value);
   };
 
   return (
     <>
       <div className="flex gap-1">
         {stars.map((_, index) => {
+          const startValue = index + 1;
+
           return (
             <FaStar
               key={index}
               size={32}
-              value={rating}
               color={
-                (hoverValue || rating) > index ? colors.orange : colors.grey
+                (hoverValue || value) >= startValue
+                  ? colors.orange
+                  : colors.grey
               }
-              onClick={() => handleClickStar(index + 1)}
-              onMouseOver={() => handleMouseOverStar(index + 1)}
-              onMouseLeave={() => handleMouseLeaveStar()}
+              onClick={() => handleClickStar(startValue)}
+              onMouseOver={() => handleMouseOverStar(startValue)}
+              onMouseLeave={handleMouseLeaveStar}
+              className="cursor-pointer"
             />
           );
         })}

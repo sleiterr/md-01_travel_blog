@@ -25,7 +25,7 @@ export function saveReviewToStorage(reviews) {
 }
 
 export function addReviewToStorage(postId, review) {
-  if (!review || review.trim() === "") return;
+  if (!review?.text || !review.rating) return;
 
   const allReviews = getReviewsFromStorage();
   const postReviews = allReviews[postId] || [];
