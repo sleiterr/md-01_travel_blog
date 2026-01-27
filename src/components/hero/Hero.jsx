@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { location } from "../../assets/iconExports/index.js";
 import heroBg from "../../assets/bgHero/hero.gif";
 import StatBox from "./StatBox";
 import Button from "../Button/Button";
+import BlurText from "../animation/BlurText.jsx";
 
 const heroText = [
   {
@@ -49,11 +49,18 @@ export default Hero;
 const HeroItem = () => {
   return (
     <div>
-      {heroText.map((item) => (
+      {heroText.map((item, index) => (
         <div key={item.id} className="flex flex-col items-start justify-center">
           {item.element}
           <h1 className={item.titleClass}>{item.title}</h1>
-          <h2 className={item.subtitleClass}>{item.subtitle}</h2>
+          <BlurText
+            as="h2"
+            duration={1.2}
+            delay={index * 0.15}
+            className={item.subtitleClass}
+          >
+            {item.subtitle}
+          </BlurText>
         </div>
       ))}
     </div>

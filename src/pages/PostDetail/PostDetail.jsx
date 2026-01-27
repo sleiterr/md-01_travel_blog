@@ -5,10 +5,11 @@ import SectionPost from "../../components/Section/SectionPost.jsx";
 import PostNav from "./postNav.jsx";
 import ScrollLink from "./ScrollLink.jsx";
 import ReviewModal from "./ReviewModal.jsx";
+import BlurText from "../../components/animation/BlurText.jsx";
 
 import clsx from "clsx";
 
-const PostDetail = () => {
+const PostDetail = ({ index }) => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -71,14 +72,18 @@ const PostDetail = () => {
           <h2 className="font-semibold text-4xl text-secondary mb-4">
             {post.title}
           </h2>
-          <p
+          <BlurText
+            as="p"
+            direction="top"
+            duration={0.8}
+            delay={index * 0.15}
             className={clsx(
               "font-light text-lg/7 text-secondary tracking-wide",
               "w-2xl",
             )}
           >
             {post.content}
-          </p>
+          </BlurText>
         </div>
         <div
           className={clsx(

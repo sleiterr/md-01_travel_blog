@@ -5,6 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import aboutImg from "../../../public/Latest/santorini.gif";
 import Section from "../Section/Section.jsx";
 import Button from "../Button/Button.jsx";
+import BlurText from "../animation/BlurText.jsx";
 
 const aboutText = [
   {
@@ -78,10 +79,17 @@ export default About;
 const AboutItem = () => {
   return (
     <>
-      {aboutText.map((item) => (
+      {aboutText.map((item, index) => (
         <div key={item.id} className="mt-auto mb-auto">
           <h2 className={item.titleClass}>{item.title}</h2>
-          <p className={item.textClass}>{item.text}</p>
+          <BlurText
+            as="p"
+            duration={1.2}
+            delay={0.4 + index * 0.15}
+            className={item.textClass}
+          >
+            {item.text}
+          </BlurText>
         </div>
       ))}
     </>
