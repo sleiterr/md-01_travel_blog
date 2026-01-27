@@ -26,6 +26,8 @@ const postText = [
 
 const ReviewModal = ({ postId }) => {
   const [postText, setPost] = useState("");
+  const [rating, setRating] = useState(0);
+  const [open, setOpen] = useState(false);
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
@@ -36,15 +38,26 @@ const ReviewModal = ({ postId }) => {
 
   // Handle publish button click
   const handlePublish = () => {
+    if (!rating) {
+      alert("Place select a rating before publishing your review.");
+      return;
+    }
     //if post is empty, do not proceed
     if (postText.trim() === "") return;
     // add the review to localStorage
-    addReviewToStorage(postId, postText);
-    setReviews((prew) => [...prew, postText]);
+    addReviewToStorage(postId, {
+      text: postText,
+      rating: rating,
+      createdAt: Date.now(),
+    });
+
+    setReviews((prev) => [...prev, { text: postText, rating }]);
     // log the published review (for demonstration purposes)
     console.log("Published review:", postText);
     // clear the post after publishing
     setPost("");
+    setRating(0);
+    setOpen(false);
   };
 
   // function to clear the post
@@ -53,7 +66,7 @@ const ReviewModal = ({ postId }) => {
   };
 
   return (
-    <Dialog.Root>
+    <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
         <ReviewBtn>
           Giv din mening
@@ -82,7 +95,7 @@ const ReviewModal = ({ postId }) => {
               <p className="font-semibold text-lg mb-2 text-review">
                 Rate and review
               </p>
-              <RatingStars />
+              <RatingStars value={rating} onChange={setRating} />
             </div>
             <div className="">
               <FormField value={postText} onChange={setPost} />
@@ -98,14 +111,12 @@ const ReviewModal = ({ postId }) => {
                 Cancel
               </button>
             </Dialog.Close>
-            <Dialog.Close asChild>
-              <button
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                onClick={handlePublish}
-              >
-                Publish
-              </button>
-            </Dialog.Close>
+            <button
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              onClick={handlePublish}
+            >
+              Publish
+            </button>
           </div>
         </Dialog.Content>
       </Dialog.Portal>
