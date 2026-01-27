@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { fetchLatestPosts } from "../../utils/api.js";
 import { calculateStatus } from "../../utils/statistics.js";
 import RatingSection from "../Section/RatingSection.jsx";
+import CountUp from "../animation/CountUp.jsx";
 
 const PanelText = [
   {
@@ -12,7 +13,7 @@ const PanelText = [
     textVisited: "Lande besøgt",
     textPosts: "Blogindlæg",
     textLikes: "Samlede likes",
-    textClass: "font-dm text-rating-text text-xl tracking-wide",
+    textClass: "font-dm text-rating-text text-xl tracking-wide  ",
   },
 ];
 
@@ -70,33 +71,62 @@ const PanelItem = ({ countriesVisited, totalPosts, totalLikes }) => {
       {PanelText.map((item) => (
         <ul
           key={item.id}
-          className="flex flex-col md:flex-row items-center justify-between gap-10"
+          className="flex flex-row items-center justify-between gap-10"
         >
           <li className="flex flex-col items-center justify-center gap-2">
             <p className="font-dm font-bold text-rating-nr text-6xl">
-              {countriesVisited}
+              <CountUp
+                from={0}
+                to={countriesVisited}
+                separator=","
+                direction="up"
+                duration={1.4}
+                delay={0.3}
+                className="count-up-text"
+                startCounting={true}
+              />
             </p>
             <p className={item.textClass}>{item.textVisited}</p>
           </li>
           <li className="flex flex-col items-center justify-center gap-2">
             <p className="font-dm font-bold text-rating-nr text-6xl">
-              {totalPosts}
+              <CountUp
+                from={0}
+                to={totalPosts}
+                separator=","
+                direction="up"
+                duration={1.4}
+                delay={0.3}
+                className="count-up-text"
+                startCounting={true}
+              />
             </p>
             <p className={item.textClass}>{item.textPosts}</p>
           </li>
-          <li className="flex flex-col items-center justify-center gap-1">
-            <p
+          <li className="flex flex-col items-center justify-center gap-1 ">
+            <div
               className={clsx(
-                "flex items-center gap-4",
-                "font-dm font-bold text-rating-nr text-6xl",
+                "flex flex-col items-center justify-center",
+                "font-dm font-bold text-rating-nr text-6xl ",
               )}
             >
-              <span>
+              <span className="inline-flex items-center justify-center tabular-nums min-w-[6ch]">
                 <ImPlus className="text-3xl" />
+                <CountUp
+                  from={0}
+                  to={totalLikes}
+                  separator=","
+                  direction="up"
+                  duration={1.4}
+                  delay={0.3}
+                  className="count-up-text"
+                  startCounting={true}
+                />
               </span>
-              {totalLikes}
-            </p>
-            <p className={item.textClass}>{item.textLikes}</p>
+              <p className={clsx("font-normal text-center", item.textClass)}>
+                {item.textLikes}
+              </p>
+            </div>
           </li>
         </ul>
       ))}

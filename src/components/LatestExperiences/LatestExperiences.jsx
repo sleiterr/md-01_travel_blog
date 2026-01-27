@@ -3,6 +3,7 @@ import { fetchLatestPosts } from "../../utils/api.js";
 import Section from "../Section/Section.jsx";
 import CardLatest from "./CardLatest.jsx";
 import BtnFilter from "./BtnFilter.jsx";
+import BlurText from "../animation/BlurText.jsx";
 
 const latestText = [
   {
@@ -77,13 +78,21 @@ export default LatestExperiences;
 const Latestitem = () => {
   return (
     <>
-      {latestText.map((item) => (
+      {latestText.map((item, index) => (
         <div
           key={item.id}
           className="flex flex-col items-center text-center mb-16"
         >
           <h2 className={item.titleClass}>{item.title}</h2>
-          <p className={item.subtitle}>{item.subtitle}</p>
+          <BlurText
+            as="p"
+            direction="top"
+            duration={0.8}
+            delay={index * 0.15}
+            className={item.subtitle}
+          >
+            {item.subtitle}
+          </BlurText>
         </div>
       ))}
     </>
