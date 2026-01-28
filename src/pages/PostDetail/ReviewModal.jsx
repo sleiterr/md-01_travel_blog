@@ -5,6 +5,9 @@ import clsx from "clsx";
 import ReviewBtn from "../../components/Button/ReviewBtn";
 import RatingStars from "./RatingStars.jsx";
 import FormField from "./FormField.jsx";
+import ModalBtn from "../../components/Button/ModalBtn.jsx";
+
+import { toast } from "sonner";
 
 import {
   addReviewToStorage,
@@ -39,11 +42,15 @@ const ReviewModal = ({ postId }) => {
   // Handle publish button click
   const handlePublish = () => {
     if (!rating) {
-      alert("Place select a rating before publishing your review.");
+      toast.error("Skriv venligst en rating ⭐");
       return;
     }
     //if post is empty, do not proceed
-    if (postText.trim() === "") return;
+    if (postText.trim() === "") {
+      toast.error("Skriv venligst en anmeldelse ✍️");
+      return;
+    }
+
     // add the review to localStorage
     addReviewToStorage(postId, {
       text: postText,
@@ -55,6 +62,9 @@ const ReviewModal = ({ postId }) => {
     // log the published review (for demonstration purposes)
     console.log("Published review:", postText);
     // clear the post after publishing
+
+    toast.success("Tak! Din mening er modtaget 🙌");
+
     setPost("");
     setRating(0);
     setOpen(false);
@@ -104,19 +114,14 @@ const ReviewModal = ({ postId }) => {
 
           <div className="flex justify-end gap-3 mt-4">
             <Dialog.Close asChild>
-              <button
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+              <ModalBtn
+                className="bg-gray-300! hover:bg-gray-400!"
                 onClick={handleCancel}
               >
-                Cancel
-              </button>
+                Annuller
+              </ModalBtn>
             </Dialog.Close>
-            <button
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-              onClick={handlePublish}
-            >
-              Publish
-            </button>
+            <ModalBtn onClick={handlePublish}>Udgiv</ModalBtn>
           </div>
         </Dialog.Content>
       </Dialog.Portal>

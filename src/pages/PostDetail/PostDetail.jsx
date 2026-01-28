@@ -6,8 +6,14 @@ import PostNav from "./postNav.jsx";
 import ScrollLink from "./ScrollLink.jsx";
 import ReviewModal from "./ReviewModal.jsx";
 import BlurText from "../../components/animation/BlurText.jsx";
+import SplitText from "../../components/animation/SplitText.jsx";
 
 import clsx from "clsx";
+
+// Animation complete handler
+const handleAnimationComplete = () => {
+  console.log("All letters have animated!");
+};
 
 const PostDetail = ({ index }) => {
   const { id } = useParams();
@@ -69,9 +75,21 @@ const PostDetail = ({ index }) => {
             "flex flex-col items-start justify-center",
           )}
         >
-          <h2 className="font-semibold text-4xl text-secondary mb-4">
-            {post.title}
-          </h2>
+          <SplitText
+            text={post.title}
+            delay={60}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            onLetterAnimationComplete={handleAnimationComplete}
+            showCallback
+            className="font-semibold text-4xl text-secondary mb-4"
+          />
           <BlurText
             as="p"
             direction="top"

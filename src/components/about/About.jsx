@@ -12,7 +12,7 @@ const aboutText = [
     id: 1,
     title: "Solnedgang i Santorini: En Drøm Bliver til Virkelighed",
     text: "  Da jeg ankom til Santorini, vidste jeg, at dette ville blive et af højdepunkterne på min rejse. De hvide huse med de ikoniske blå kupler, de smalle gader og ikke mindst de utrolige solnedgang har gjort dette sted verdensberømt...",
-    titleClass: "font-semibold text-3xl max-w-110 tracking-wide mb-4",
+    titleClass: "font-semibold text-3xl max-w-108 tracking-wider mb-4",
     textClass: "font-normal text-lg tracking-wide max-w-136",
   },
 ];
