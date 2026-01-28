@@ -4,6 +4,7 @@ import Section from "../Section/Section.jsx";
 import CardLatest from "./CardLatest.jsx";
 import BtnFilter from "./BtnFilter.jsx";
 import BlurText from "../animation/BlurText.jsx";
+import SplitText from "../animation/SplitText.jsx";
 
 const latestText = [
   {
@@ -14,6 +15,10 @@ const latestText = [
     subtitleClass: "font-normal text-base text-white",
   },
 ];
+
+const handleAnimationComplete = () => {
+  console.log("All letters have animated!");
+};
 
 const LatestExperiences = () => {
   const [latestPosts, setLatestPosts] = useState([]);
@@ -83,7 +88,21 @@ const Latestitem = () => {
           key={item.id}
           className="flex flex-col items-center text-center mb-16"
         >
-          <h2 className={item.titleClass}>{item.title}</h2>
+          <SplitText
+            text={item.title}
+            delay={50}
+            duration={0.4}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            onLetterAnimationComplete={handleAnimationComplete}
+            showCallback
+            className={item.titleClass}
+          />
           <BlurText
             as="p"
             direction="top"

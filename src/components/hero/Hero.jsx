@@ -4,6 +4,7 @@ import heroBg from "../../assets/bgHero/hero.gif";
 import StatBox from "./StatBox";
 import Button from "../Button/Button";
 import BlurText from "../animation/BlurText.jsx";
+import SplitText from "../animation/SplitText.jsx";
 
 const heroText = [
   {
@@ -15,6 +16,10 @@ const heroText = [
     subtitleClass: "font-normal text-lg text-secondary text-2xl w-[34rem]",
   },
 ];
+
+const handleAnimationComplete = () => {
+  console.log("All letters have animated!");
+};
 
 const Hero = () => {
   return (
@@ -52,7 +57,21 @@ const HeroItem = () => {
       {heroText.map((item, index) => (
         <div key={item.id} className="flex flex-col items-start justify-center">
           {item.element}
-          <h1 className={item.titleClass}>{item.title}</h1>
+          <SplitText
+            text={item.title}
+            delay={50}
+            duration={0.8}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            onLetterAnimationComplete={handleAnimationComplete}
+            showCallback
+            className={item.titleClass}
+          />
           <BlurText
             as="h2"
             duration={1.2}
