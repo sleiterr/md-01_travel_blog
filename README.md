@@ -35,6 +35,7 @@
 				<li><a href="#built-with">Built With</a></li>
 			</ul>
 		</li>
+		<li><a href="#design">Design</a></li>
 		<li>
 			<a href="#getting-started">Getting Started</a>
 			<ul>
@@ -77,6 +78,14 @@ Key ideas:
 - [![Framer Motion][FramerMotion]][FramerMotion-url]
 - [![Radix UI][RadixUI]][RadixUI-url]
 - [![Sonner][Sonner]][Sonner-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- DESIGN -->
+
+## Design
+
+Figma file: <a href="https://www.figma.com/design/v3jJNtI8esSEQ8DEsUjvka/Travel-Blog?node-id=5-60&m=dev&t=ItzkuGbRiVTaxGEO-1">View design</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
