@@ -3,7 +3,14 @@ title: Travel Blog — dokumentation
 description: Undervisningsprojekt med React + Vite og Tailwind CSS
 ---
 
-Dette er et undervisningsprojekt i formatet travel blog. Formålet er at vise arbejde med indlaeg, indlaegsdetaljer, filtre, animationer og statistik ved brug af en moderne frontend-stack.
+Dette er et undervisningsprojekt i formatet travel blog. Formaalet er at vise arbejde med indlaeg, indlaegsdetaljer, filtre, animationer og statistik ved brug af en moderne frontend-stack.
+
+## Indhold
+
+- [Projektoversigt](/project-overview)
+- [Projektstruktur](/project-structure)
+- [Komponenter](/components)
+- [Naeste skridt](/next-steps)
 
 ## Hurtig start
 
@@ -32,39 +39,3 @@ npm run preview
 - React Router
 - GSAP, Framer Motion
 - Radix UI, Sonner
-
-## Projektstruktur (noeglemappper)
-
-```
-src/
-  components/      # UI-komponenter
-  pages/           # Router-sider
-  utils/           # Hjaelpefunktioner og datahaandtering
-  assets/          # Billeder og ikoner
-public/
-  data/            # JSON-data til demo
-docs/              # docs.page dokumentation
-```
-
-## Data og kilder
-
-- `public/data/latestData.json` — liste over seneste indlaeg til forsiden.
-- `public/ImagePost/Latest/` — billeder til indlaeg.
-- `src/utils/` — hjaelpefunktioner til data, statistik og anmeldelser.
-
-## Konfiguration og miljoevariabler
-
-Projektet bruger ikke `env`-variabler. Centrale config-filer:
-
-- `vite.config.js` — Vite build.
-- `tailwind.config.js` — Tailwind styles.
-- `postcss.config.js` — PostCSS.
-- `eslint.config.js` — linting regler.
-
-## Deploy
-
-Anbefalet deploy er Vercel. Efter build importeres repoet og kommandoen `npm run build` bruges.
-
-## Om dokumentationen
-
-Dokumentationen ligger i `docs/` og publiceres via docs.page. Konfigurationen findes i `docs.json` i roden af projektet.

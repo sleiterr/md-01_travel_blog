@@ -1,0 +1,36 @@
+---
+title: Projektstruktur
+description: Overblik over mapper og roller
+---
+
+## Struktur
+
+```
+src/
+  components/
+  pages/
+  utils/
+  assets/
+public/
+  data/
+  ImagePost/
+docs/
+```
+
+## Mapper og ansvar
+
+- `src/components/` — delte UI-komponenter som header, hero, cards og footer.
+- `src/pages/` — sider til routing, fx forside og indlaegsdetaljer.
+- `src/utils/` — datahelpers, statistik og lagring af anmeldelser.
+- `src/assets/` — ikoner, logo og grafiske elementer.
+- `public/data/` — JSON-data til demoindhold.
+- `public/ImagePost/` — billeder til indlaeg.
+- `docs/` — docs.page dokumentation.
+
+## Vigtige filer
+
+- `src/main.jsx` — app bootstrap.
+- `src/App.jsx` — hovedlayout og routing.
+- `src/index.css` — globale styles.
+- `vite.config.js` — Vite build.
+- `tailwind.config.js` — Tailwind tema.
