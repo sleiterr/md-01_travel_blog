@@ -1,21 +1,36 @@
 {
-  "name": "My Docs",
-  "description": "My documentation site",
+  "name": "Travel Blog Docs",
+  "description": "Dokumentation for undervisningsprojekt",
   "sidebar": [
-  {
-    "group": "Getting Started",
-    "pages": [
-      {
-        "title": "Getting to know docs.page",
-        "href": "/",
-        "icon": "rocket"
-      },
-      {
-        "title": "Next Steps",
-        "href": "/next-steps",
-        "icon": "arrow-right"
-      }
-    ]
-  }
-]
+    {
+      "group": "Oversigt",
+      "pages": [
+        {
+          "title": "Hjem",
+          "href": "/",
+          "icon": "home"
+        },
+        {
+          "title": "Projektoversigt",
+          "href": "/project-overview",
+          "icon": "info"
+        },
+        {
+          "title": "Projektstruktur",
+          "href": "/project-structure",
+          "icon": "folder"
+        },
+        {
+          "title": "Komponenter",
+          "href": "/components",
+          "icon": "puzzle"
+        },
+        {
+          "title": "Naeste skridt",
+          "href": "/next-steps",
+          "icon": "arrow-right"
+        }
+      ]
+    }
+  ]
 }
