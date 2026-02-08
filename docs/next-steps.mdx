@@ -1,0 +1,43 @@
+---
+title: Naeste skridt
+description: Hvad du goer efter start
+---
+
+## Projektkommandoer
+
+```bash
+npm run dev      # lokal udvikling
+npm run build    # produktionsbuild
+npm run preview  # lokal visning af build
+npm run lint     # eslint check
+```
+
+## Saadan tilfoejer du indhold
+
+1. Opdater JSON i `public/data/latestData.json`.
+2. Tilfoej billeder i `public/ImagePost/Latest/`.
+3. Tjek visning paa forsiden og i indlaegsdetaljer.
+
+## Navigation og sider
+
+- Forside: `src/pages/Home/Home.jsx`.
+- Indlaegsdetaljer: `src/pages/PostDetail/PostDetail.jsx`.
+- Primaere UI-blokke: `src/components/`.
+
+## Kvalitetstjek
+
+- Koer `npm run lint` foer aflevering.
+- Tjek match med Figma (link i README).
+- Test responsivt paa mobil og desktop.
+
+## Publicering af dokumentation
+
+1. Opdater indhold i `docs/`.
+2. Tjek via https://docs.page/preview.
+3. Push aendringer til repoet.
+
+## Hvis funktionalitet skal udvides
+
+- Tilfoej nye kategorier: opdater data i JSON og filtre i komponenter.
+- Udvid statistik: `src/utils/statistics.js`.
+- Tilfoej animationer: `src/components/animation/`.
