@@ -194,7 +194,7 @@ Project Link: [https://github.com/sleiterr/md-01_travel_blog](https://github.com
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[product-screenshot]: Doc/img/Screen_Shot.png
+[product-screenshot]: docs/assets/screen_shot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://react.dev/
 [Vitejs]: https://img.shields.io/badge/Vite-0E0C23?style=for-the-badge&logo=vite&logoColor=FFCE5A
