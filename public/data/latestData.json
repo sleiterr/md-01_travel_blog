@@ -77,6 +77,67 @@
       "images": ["/Latest/peru.gif", "/ImagePost/peru.gif"],
       "description": "Fire dages vandring gennem bjergene kulminerede med den utrolige udsigt over de gamle ruiner...",
       "content": "Inca Trail er ikke bare en vandrerute — det er en rejse gennem historie og dramatiske landskaber. Stierne snor sig gennem tågeskov, stejle bjergpas og gamle inkabyer, hvor hvert skridt føles som en forbindelse til fortiden. Efter flere dages vandring åbnede landskabet sig, og Machu Picchu dukkede frem mellem skyerne. Synet var overvældende. De gamle ruiner lå stille i morgensolen, og træthed blev øjeblikkeligt erstattet af ærefrygt. Det var kulminationen på en rejse, jeg aldrig vil glemme."
+    },
+    {
+      "id": 7,
+      "title": "Roadtrip langs Australiens Østkyst",
+      "date": "28-10-2023",
+      "country": "Australia",
+      "category": "Eventyr",
+      "likes": 76,
+      "commentsCount": 19,
+      "rating": 3.8,
+      "images": [
+        "/Latest/australias_east_сoast.gif",
+        "/ImagePost/australias_east_coast.gif"
+      ],
+      "description": "Uendelige strande, surfspots og små kystbyer gjorde denne roadtrip helt uforglemmelig...",
+      "content": "Australiens østkyst er skabt til roadtrips. Med bilen fyldt og kortet åbent kørte jeg fra strand til strand, hvor hver dag bød på nye udsigter og oplevelser. Solopgange over havet, spontane stop i små surferbyer og aftener med bølgernes lyd som baggrund. Friheden ved at kunne stoppe hvor som helst og bare nyde øjeblikket gjorde rejsen helt særlig. Det var en rejse uden fast plan — og netop derfor den perfekte."
+    },
+    {
+      "id": 8,
+      "title": "Vinsmagning i Toscana",
+      "date": "22-10-2023",
+      "country": "Italy",
+      "category": "Mad",
+      "likes": 98,
+      "commentsCount": 34,
+      "rating": 4.4,
+      "images": [
+        "/Latest/wine_tasting_in_tuscany.gif",
+        "/ImagePost/wine_tasting_in_tuscany.gif"
+      ],
+      "description": "Bølgende vinmarker, rustikke vingårde og smagen af ægte italiensk vin...",
+      "content": "Toscana er indbegrebet af langsom livsstil og nydelse. Mellem de grønne bakker og gamle stenhuse besøgte jeg små vingårde, hvor vinproduktion stadig er et håndværk, der går i arv gennem generationer. Smagen af Chianti og Brunello blev endnu bedre akkompagneret af lokale oste, olivenolie og friskbagt brød. Stemningen var afslappet, solen stod lavt, og tiden syntes at gå langsommere. En oplevelse, der rammer både smagsløg og sjæl."
+    },
+    {
+      "id": 9,
+      "title": "Safari i Serengeti",
+      "date": "15-10-2023",
+      "country": "Tanzania",
+      "category": "Natur",
+      "likes": 167,
+      "commentsCount": 52,
+      "rating": 4.7,
+      "images": ["/Latest/safari_zebra.gif", "/ImagePost/safari_serengeti.gif"],
+      "description": "Tæt på løver, elefanter og giraffer i et af verdens mest ikoniske naturområder...",
+      "content": "Serengeti er et sted, hvor naturen regerer fuldstændigt. På safari kørte vi gennem åbne savanner, hvor vilde dyr bevægede sig frit og uforstyrret. At se en løve hvile i skyggen eller en flok elefanter krydse sletten var både ydmygende og fascinerende. Stilheden, kun brudt af vinden og dyrelivet, gjorde oplevelsen intens og nærværende. Det var en påmindelse om naturens enorme kraft og skønhed."
+    },
+    {
+      "id": 10,
+      "title": "Vinter i Lapland",
+      "date": "08-10-2023",
+      "country": "Finland",
+      "category": "Natur",
+      "likes": 121,
+      "commentsCount": 41,
+      "rating": 4.3,
+      "images": [
+        "/Latest/winter_in_lapland.gif",
+        "/ImagePost/winter_in_lapland.gif"
+      ],
+      "description": "Sneklædte skove, hundeslæder og total stilhed nord for polarcirklen...",
+      "content": "Lapland om vinteren føles som et eventyrland. Sneen dækkede landskabet så langt øjet rakte, og stilheden var næsten total. Jeg kørte hundeslæde gennem skovene, hvor kun lyden af slædens glid og hundenes åndedræt brød roen. Om aftenen samledes vi i en varm hytte med udsigt til den klare stjernehimmel. Det var en oplevelse præget af ro, enkelhed og respekt for naturen."
     }
   ]
 }

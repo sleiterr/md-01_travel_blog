@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { ImPlus } from "react-icons/im";
 import clsx from "clsx";
 
 import { fetchLatestPosts } from "../../utils/api.js";
@@ -110,8 +109,7 @@ const PanelItem = ({ countriesVisited, totalPosts, totalLikes }) => {
                 "font-dm font-bold text-rating-nr text-6xl ",
               )}
             >
-              <span className="inline-flex items-center justify-center tabular-nums min-w-[6ch]">
-                <ImPlus className="text-3xl" />
+              <span className="inline-flex items-center justify-center gap-1">
                 <CountUp
                   from={0}
                   to={totalLikes}
@@ -119,7 +117,7 @@ const PanelItem = ({ countriesVisited, totalPosts, totalLikes }) => {
                   direction="up"
                   duration={1.4}
                   delay={0.3}
-                  className="count-up-text"
+                  className="count-up-text inline-block min-w-[6ch] text-center tabular-nums"
                   startCounting={true}
                 />
               </span>

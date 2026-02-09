@@ -6,7 +6,7 @@
 <br />
 <div align="center">
 	<a href="https://github.com/your-username/your-repo">
-		<img src="Doc/img/logo.svg" alt="Logo" width="80" height="80">
+		<img src="src/assets/logo/logo_readme.svg" alt="Logo" width="80" height="80">
 	</a>
     <h3 align="center">Travel Blog</h3>
     <p align="center">
